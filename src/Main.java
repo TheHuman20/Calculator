@@ -5,7 +5,6 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
     public static Scanner scannerInt = new Scanner(System.in);
 
-
     public static void main(String[] args) {
         runCalculatorMenu();
     }
@@ -14,7 +13,7 @@ public class Main {
         Calculator calculator = new Calculator();
         int firstNumber;
         int secondNumber;
-        String operation = "";
+        String operation;
 
         do {
             System.out.println("Please enter an operation symbol:" +
@@ -54,11 +53,7 @@ public class Main {
                     break;
             }
         } while (true);
-
-
     }
-
-
     public static int inputNumber() {
         int number;
         while (!scannerInt.hasNextInt()) {
@@ -68,12 +63,4 @@ public class Main {
         number = scannerInt.nextInt();
         return number;
     }
-
-    /*public static int factorial(int number) {
-                if (number == 1) {
-                    return 1;
-                }
-                return factorial(number - 1) * number;
-    }*/
-
 }
